@@ -385,6 +385,9 @@ We're working on a Haskell wrapper for the ruby PACT mock service.
 -----------------------------------------------
 # Free Monad bites back
 
+- The 'naive' Free Monad performs terribly
+- Saved by the Church encoded Free Monad
+
 ^ Naive free monad performed horribly.
 We freak out.
 We reach out.
@@ -400,6 +403,21 @@ We rejoice!
 
 ^ Eager to start using Pipes and/or Conduit in the large in our programs.
 But finding it hard to adapt the outer shell.
+
+-----------------------------------------------
+# Some nice surprises
+
+- Haskell for scripting
+- *#!* thanks to stack
+- Most scripts promoted to apps sharing a lib
+- Much fewer tests (property tests > unit tests)
+- Really easy to drop into an unfamiliar part of codebase
+- No bugs! (so far)
+
+^ We were using python for most infra coding.
+Some team members had a few ad-hoc analysis tasks that could
+have been done with postman/curl and grep and csvkit, but realised
+you'd be reimplementing a lot of the batch tasks' domain.
 
 -----------------------------------------------
 # Haskell takes over
